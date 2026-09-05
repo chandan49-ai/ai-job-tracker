@@ -14,7 +14,7 @@ const app = express();
 
 app.use(
   cors({
-   origin: "http://localhost:5174",
+   origin: "https://ai-job-tracker-1-mfhg.onrender.com",
     credentials: true,
   })
 );
