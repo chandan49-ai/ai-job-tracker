@@ -45,15 +45,15 @@ const fetchJobs = async () => {
   try {
     const token = localStorage.getItem("token");
 
-    const response = await fetch(
-      `${API_URL}/api/jobs`,
-      {
-        method: "GET",
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      }
-    );
+   const response = await fetch(
+  `${API_URL}/api/jobs`,
+  {
+    method: "GET",
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  }
+);
 
     const data = await response.json();
 
