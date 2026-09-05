@@ -46,7 +46,7 @@ const fetchJobs = async () => {
     const token = localStorage.getItem("token");
 
     const response = await fetch(
-      `${API_URL}/api/jobs`
+      `${API_URL}/api/jobs`,
       {
         method: "GET",
         headers: {
